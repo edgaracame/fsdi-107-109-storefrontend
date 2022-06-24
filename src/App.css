@@ -9,9 +9,42 @@
   --gray: #828282;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap");
+
+.general {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.general p {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
-  height: 80vh;
+  grid-area: main;
+  margin-top: 15px;
+}
+
+.welcome {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    font-size: 30px;
+  }
 }
 
 .App-logo {

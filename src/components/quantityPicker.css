@@ -1,0 +1,37 @@
+:root {
+  --blue: #4655f6;
+  --red: #ff3c28;
+  --cian: #0ab9e6;
+  --green: #1edc00;
+  --yellow: #e5ff00;
+  --purple: #b400e7;
+  --orange: #faa004;
+  --gray: #828282;
+}
+
+.quantityPicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantityPicker button,
+.quantityPicker label {
+  display: inline-block;
+  margin: 3px;
+}
+
+.quantityPicker button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.quantityPicker button:first-child {
+  color: var(--orange);
+}
+
+.quantityPicker button:last-child {
+  color: var(--green);
+}

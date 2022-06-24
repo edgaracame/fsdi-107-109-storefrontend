@@ -10,13 +10,56 @@
 }
 
 .navbar {
-  background-color: var(--blue);
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  color: var(--blue);
+  padding: 20px 0;
 }
 
-.navbar h1 {
+.header .logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact p {
+  margin: 0 10px;
+}
+
+.menu {
+  background-color: var(--blue);
+  width: 100%;
+  text-align: center;
+}
+
+.nav {
+  display: inline-flex;
+}
+
+.nav-item a {
   color: white;
+  text-align: center;
+}
+
+.nav-item a:hover {
+  color: white;
+  text-align: center;
 }
