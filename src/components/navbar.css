@@ -36,12 +36,24 @@
   align-items: center;
   color: var(--blue);
   margin-left: 50px;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .contact p {
   margin: 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.phone-icon,
+.email-icon {
+  background-color: var(--blue);
+  padding: 10px;
+  border-radius: 100%;
+  color: white;
+  font-size: 12px;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 5px;
 }
 
 .menu {
@@ -62,4 +74,31 @@
 .nav-item a:hover {
   color: white;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 15px;
+  }
+
+  .contact {
+    display: block;
+    margin-left: 10px;
+  }
+
+  .contact p {
+    font-size: 12px;
+  }
+
+  .contact p:first-child {
+    margin-bottom: 10px;
+  }
+
+  .phone-icon,
+  .email-icon {
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 10px;
+    margin-right: 2px;
+  }
 }
