@@ -21,4 +21,22 @@
 .footer p {
   color: white;
   font-weight: 400;
+  cursor: pointer;
+  margin: 4px 0;
+}
+
+.show-button {
+  padding: 5px 10px;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.show-button:hover {
+  color: var(--red);
+  background-color: white;
 }
