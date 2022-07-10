@@ -15,7 +15,7 @@ function Footer(){
 
     return(
         <div className="footer">
-            { visible ? <p onClick={changeVisible}>&copy; Castillo Medina Edgar Antonio 2022</p> : <button onClick={changeVisible} className="show-button">Show info</button> }
+            <p>&copy; Castillo Medina Edgar Antonio 2022</p>
         </div>
     )
 }

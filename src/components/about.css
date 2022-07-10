@@ -1,0 +1,37 @@
+:root {
+  --blue: #4655f6;
+  --red: #ff3c28;
+  --cian: #0ab9e6;
+  --green: #1edc00;
+  --yellow: #e5ff00;
+  --purple: #b400e7;
+  --orange: #faa004;
+  --gray: #828282;
+}
+
+.about {
+  margin-top: 15px;
+}
+
+.about p {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.show-button {
+  padding: 5px 10px;
+  color: var(--cian);
+  border: 1px solid var(--cian);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.show-button:hover {
+  color: white;
+  background-color: var(--cian);
+}

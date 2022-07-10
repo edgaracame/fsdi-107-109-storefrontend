@@ -1,0 +1,20 @@
+:root {
+  --blue: #4655f6;
+  --red: #ff3c28;
+  --cian: #0ab9e6;
+  --green: #1edc00;
+  --yellow: #e5ff00;
+  --purple: #b400e7;
+  --orange: #faa004;
+  --gray: #828282;
+}
+
+.label-cart {
+  margin-top: 15px;
+}
+
+.label-cart p {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 16px;
+}

@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import "./navbar.css";
 
 function Navbar(){
@@ -36,17 +38,10 @@ function Navbar(){
             </div>
 
             <div className="menu">
-                <ul className="nav">
-                    <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">About</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+                <Link className="link" to="/">Home</Link>
+                <Link className="link" to="/catalog">Catalog</Link>
+                <Link className="link" to="/about">About</Link>
+                <Link className="link nav-cart" to="/cart"><FontAwesomeIcon icon={faCartShopping} className="cart-icon"/>&nbsp; Cart</Link>
             </div>
         </div>
     );

@@ -1,0 +1,64 @@
+:root {
+  --blue: #4655f6;
+  --red: #ff3c28;
+  --cian: #0ab9e6;
+  --green: #1edc00;
+  --yellow: #e5ff00;
+  --purple: #b400e7;
+  --orange: #faa004;
+  --gray: #828282;
+}
+
+.banner {
+  background-image: url(../../public/img/banner.png);
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle {
+  width: 35%;
+}
+
+.welcome-text {
+  background-color: white;
+  color: var(--purple);
+  font-size: 24px;
+  padding: 16px 32px;
+  font-weight: 700;
+}
+
+.banner-text {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.catalog-link {
+  margin-top: 25px;
+}
+
+.catalog-link p {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--blue);
+}
+
+.link-catalog {
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+.link-catalog:hover {
+  background-color: var(--orange);
+  color: white;
+}
