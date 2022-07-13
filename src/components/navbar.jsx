@@ -41,6 +41,7 @@ function Navbar(){
                 <Link className="link" to="/">Home</Link>
                 <Link className="link" to="/catalog">Catalog</Link>
                 <Link className="link" to="/about">About</Link>
+                <Link className="link" to="/admin">Admin</Link>
                 <Link className="link nav-cart" to="/cart"><FontAwesomeIcon icon={faCartShopping} className="cart-icon"/>&nbsp; Cart</Link>
             </div>
         </div>

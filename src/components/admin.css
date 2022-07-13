@@ -1,0 +1,106 @@
+:root {
+  --blue: #4655f6;
+  --red: #ff3c28;
+  --cian: #0ab9e6;
+  --green: #1edc00;
+  --yellow: #e5ff00;
+  --purple: #b400e7;
+  --orange: #faa004;
+  --gray: #828282;
+}
+
+.admin {
+  margin-top: 15px;
+}
+
+.admin-text {
+  font-size: 24px;
+  color: var(--red);
+  font-weight: 700;
+}
+
+.forms {
+  display: flex;
+}
+
+.product-form {
+  flex: 3;
+}
+
+.coupon-form {
+  flex: 2;
+}
+
+.forms .card {
+  margin: 15px;
+}
+
+.product-form {
+  border: 0.5px solid var(--purple);
+}
+
+.product-form .card-header {
+  background-color: var(--purple);
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.product-button {
+  padding: 5px 10px;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.product-button:hover {
+  color: white;
+  background-color: var(--orange);
+}
+
+.coupon-form {
+  border: 0.5px solid var(--orange);
+}
+
+.coupon-form .card-header {
+  background-color: var(--orange);
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.coupon-button {
+  padding: 5px 10px;
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.coupon-button:hover {
+  color: white;
+  background-color: var(--purple);
+}
+
+.my-control {
+  margin: 15px 0;
+}
+
+.my-control label {
+  margin-right: 10px;
+}
+
+.my-control input {
+  width: 70%;
+}
+
+.my-control select {
+  width: 68%;
+}
