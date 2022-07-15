@@ -22,11 +22,9 @@ const Catalog = () => {
             <p className="title-catalog">This is our Amazing Catalog!</p>
             <p className="results-catalog">We have <b>{products.length}</b> products</p>
 
-            {
-                products.map((prod) => (
+            { products.map((prod) => (
                     <Product key={prod.id} data={prod}></Product>
-                ))
-            }
+                )) }
         </div>
     );
 }

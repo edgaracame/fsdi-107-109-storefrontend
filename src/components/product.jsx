@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import StoreContext from "../context/storeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import "./product.css";
 import QuantityPicker from "./quantityPicker";
+import "./product.css";
 
 const Product = (props) => {
     let [quantity, setQuantity] = useState(1);
+    let globalAddProduct = useContext(StoreContext).addProduct;
 
     const quantityChange = (val) => {
         setQuantity(val);
@@ -14,6 +16,10 @@ const Product = (props) => {
     const getTotal = () => {
         let total = props.data.price * quantity;
         return total.toFixed(2);
+    }
+
+    const handleAdd = () => {
+        globalAddProduct(props.data);
     }
 
     return(
@@ -28,7 +34,7 @@ const Product = (props) => {
                 <label>Total: ${getTotal()}</label>
                 <div className="product-buttons">
                     <QuantityPicker onChange={quantityChange}></QuantityPicker>
-                    <button className="add-cart"><FontAwesomeIcon icon={faCartShopping} className="cart-icon"/></button>
+                    <button onClick={handleAdd} className="add-cart"><FontAwesomeIcon icon={faCartShopping} className="cart-icon"/></button>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import StoreContext from "../context/storeContext";
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -7,6 +8,8 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import "./navbar.css";
 
 function Navbar(){
+    let cart = useContext(StoreContext).cart;
+
     let [visible, setVisible] = useState(false);
 
     const changeVisible = () => {
@@ -42,7 +45,7 @@ function Navbar(){
                 <Link className="link" to="/catalog">Catalog</Link>
                 <Link className="link" to="/about">About</Link>
                 <Link className="link" to="/admin">Admin</Link>
-                <Link className="link nav-cart" to="/cart"><FontAwesomeIcon icon={faCartShopping} className="cart-icon"/>&nbsp; Cart</Link>
+                <Link className="link nav-cart" to="/cart"><FontAwesomeIcon icon={faCartShopping} className="cart-icon"/>&nbsp; Cart <span>{cart.length}</span></Link>
             </div>
         </div>
     );

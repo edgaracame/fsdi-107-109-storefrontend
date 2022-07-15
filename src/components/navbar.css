@@ -108,6 +108,19 @@
   color: var(--blue);
 }
 
+.nav-cart span {
+  background-color: white;
+  color: var(--blue);
+  font-size: 14px;
+  padding: 0 4px;
+  margin-left: 2px;
+}
+
+.nav-cart:hover > span {
+  background-color: var(--blue);
+  color: white;
+}
+
 @media (max-width: 768px) {
   .header {
     padding: 20px 15px;

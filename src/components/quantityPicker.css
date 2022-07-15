@@ -13,19 +13,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .quantityPicker button,
 .quantityPicker label {
-  display: inline-block;
   margin: 3px;
 }
 
 .quantityPicker label {
-  display: inline-block;
-  text-align: center;
   border: 1px solid var(--gray);
-  width: 30px;
+  width: 25px;
+}
+
+.quantityPicker label p {
+  text-align: center;
 }
 
 .quantityPicker button {

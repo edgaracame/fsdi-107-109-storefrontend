@@ -10,7 +10,7 @@
 }
 
 .admin {
-  margin-top: 15px;
+  margin-top: 35px;
 }
 
 .admin-text {
@@ -103,4 +103,33 @@
 
 .my-control select {
   width: 68%;
+}
+
+.product-list,
+.coupon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-list-item {
+  background-color: var(--orange);
+  color: white;
+  max-width: 150px;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.coupon-list-item {
+  background-color: var(--purple);
+  color: white;
+  max-width: 150px;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.product-list-item span,
+.coupon-list-item span {
+  font-weight: 700;
 }
