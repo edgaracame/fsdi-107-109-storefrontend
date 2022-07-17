@@ -19,8 +19,10 @@ const Catalog = () => {
 
     return(
         <div className="catalog">
-            <p className="title-catalog">This is our Amazing Catalog!</p>
-            <p className="results-catalog">We have <b>{products.length}</b> products</p>
+            <div className="catalog-header">
+                <p className="title-catalog">This is our amazing virtual gallery!</p>
+                <p className="results-catalog">We have <b>{products.length}</b> products</p>
+            </div>
 
             { products.map((prod) => (
                     <Product key={prod.id} data={prod}></Product>

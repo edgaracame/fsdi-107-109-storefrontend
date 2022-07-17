@@ -10,23 +10,25 @@
 }
 
 .catalog {
-  margin: 0 100px 15px 100px;
+  margin: 0 100px;
 }
 
-.catalog .title-catalog {
+.catalog-header {
+  margin-top: 15px;
+}
+
+.title-catalog {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
   margin-top: 35px;
-  margin-bottom: 5px;
   color: var(--purple);
 }
 
-.catalog .results-catalog {
+.results-catalog {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 25px;
   color: var(--blue);
 }
 

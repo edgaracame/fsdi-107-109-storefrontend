@@ -35,3 +35,19 @@
   color: white;
   background-color: var(--cian);
 }
+
+.hide-button {
+  margin-top: 15px;
+  padding: 5px 10px;
+  color: var(--green);
+  border: 1px solid var(--green);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hide-button:hover {
+  color: white;
+  background-color: var(--green);
+}

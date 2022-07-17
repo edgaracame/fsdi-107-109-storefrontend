@@ -15,7 +15,7 @@ const About = () => {
 
     return(
         <div className="about">
-            { visible ? <p onClick={changeVisible}>edgar.castillo@mail.com</p> : <button onClick={changeVisible} className="show-button">Show info</button> }
+            { visible ? <div><p>edgar.castillo@mail.com</p> <button onClick={changeVisible} className="hide-button">Hide info</button></div> : <button onClick={changeVisible} className="show-button">Show info</button> }
         </div>
     )
 }

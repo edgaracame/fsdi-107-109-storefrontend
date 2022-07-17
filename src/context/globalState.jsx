@@ -6,12 +6,14 @@ const GlobalState = (props) => {
     const [user, setUser] = useState({});
 
     const myAddProduct = (product) => {
-        let copy = [ ...cart ];
-        copy.push(product);
+        let copy = [ ...cart, product ];
         setCart(copy);
     };
 
-    const myRemoveProduct = () => {console.log("Global remove prod")};
+    const myRemoveProduct = (productId) => {
+        let copy = cart.filter(p => p.id != productId);
+        setCart(copy);
+    };
 
     return(
         <StoreContext.Provider value={{

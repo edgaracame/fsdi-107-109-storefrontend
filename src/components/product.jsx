@@ -19,7 +19,9 @@ const Product = (props) => {
     }
 
     const handleAdd = () => {
-        globalAddProduct(props.data);
+        let prod4Cart = { ...props.data, quantity: quantity };
+
+        globalAddProduct(prod4Cart);
     }
 
     return(

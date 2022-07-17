@@ -20,6 +20,16 @@ function Navbar(){
             setVisible(false);
         }
     }
+
+    const getCount = () => {
+        let count = 0;
+
+        for(let i = 0; i < cart.length; i++){
+            count += cart[i].quantity;
+        }
+
+        return count;
+    }
     
     return(
         <div className="navbar">
@@ -45,7 +55,7 @@ function Navbar(){
                 <Link className="link" to="/catalog">Catalog</Link>
                 <Link className="link" to="/about">About</Link>
                 <Link className="link" to="/admin">Admin</Link>
-                <Link className="link nav-cart" to="/cart"><FontAwesomeIcon icon={faCartShopping} className="cart-icon"/>&nbsp; Cart <span>{cart.length}</span></Link>
+                <Link className="link nav-cart" to="/cart"><FontAwesomeIcon icon={faCartShopping} className="cart-icon"/>&nbsp; Cart <span>{getCount()}</span></Link>
             </div>
         </div>
     );

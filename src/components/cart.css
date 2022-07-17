@@ -9,12 +9,84 @@
   --gray: #828282;
 }
 
-.label-cart {
-  margin-top: 15px;
+.cart {
+  margin: 15px 300px 35px 300px;
 }
 
-.label-cart p {
+.label-cart {
+  margin-bottom: 35px;
+}
+
+.cart-header {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 5px;
+  color: var(--purple);
+}
+
+.cart-count {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--blue);
+}
+
+.cart-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-list {
+  flex: 3;
+}
+
+.cart-ticket {
+  flex: 1;
+}
+
+.cart-ticket .label-total {
+  font-size: 32px;
   color: var(--purple);
   font-weight: 700;
-  font-size: 16px;
+}
+
+.cart-ticket .number-total {
+  font-size: 34px;
+}
+
+.ticket-creditcard {
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.ticket-creditcard:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+.ticket-cash {
+  padding: 5px 10px;
+  color: var(--green);
+  border: 1px solid var(--green);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.ticket-cash:hover {
+  background-color: var(--green);
+  color: white;
 }
