@@ -32,7 +32,7 @@ const Product = (props) => {
                     <p className="title">{props.data.title}</p>
                     <p className="console">{props.data.console}</p>
                 </div>
-                <label>Price: ${props.data.price.toFixed(2)}</label>
+                <label>Price: ${(+props.data.price).toFixed(2)}</label>
                 <label>Total: ${getTotal()}</label>
                 <div className="product-buttons">
                     <QuantityPicker onChange={quantityChange}></QuantityPicker>

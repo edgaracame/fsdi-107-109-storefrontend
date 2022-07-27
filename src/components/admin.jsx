@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTicket } from "@fortawesome/free-solid-svg-icons";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 import "./admin.css";
+import DataService from "../services/dataService";
 
 const Admin = () => {
     const [product, setProduct] = useState({});
@@ -26,6 +27,9 @@ const Admin = () => {
         copy.price = price;
         let stock = parseFloat(copy.stock);
         copy.stock = stock;
+
+        let service = new DataService();
+        service.addProduct(copy);
 
         let allCopy = [ ...allProducts ];
         allCopy.push(copy);
@@ -79,6 +83,7 @@ const Admin = () => {
                                 <option value="Nintendo Switch">Nintendo Switch</option>
                                 <option value="Xbox One">Xbox One</option>
                                 <option value="PlayStation 4">PlayStation 4</option>
+                                <option value="PlayStation 4">PlayStation 5</option>
                             </select>
                         </div>
 
@@ -94,7 +99,7 @@ const Admin = () => {
 
                         <div className="my-control">
                             <label>Cover: </label>
-                            <input name="image" onChange={handleProductChange} type="file" />
+                            <input name="image" onChange={handleProductChange} type="text" />
                         </div>
 
                         <div className="my-control">
